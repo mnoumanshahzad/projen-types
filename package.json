@@ -1,5 +1,5 @@
 {
-  "name": "projen-types",
+  "name": "@mnoumanshahzad/projen-types",
   "description": "My custom projen project types",
   "repository": {
     "type": "git",

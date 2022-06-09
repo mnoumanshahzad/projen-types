@@ -14,6 +14,8 @@ const project = new cdk.JsiiProject({
   peerDeps: ['projen'],
 
   release: true,
+
+  packageName: '@mnoumanshahzad/projen-types',
   releaseToNpm: true,
   npmTokenSecret: 'GITHUB_TOKEN',
   npmRegistryUrl: 'https://npm.pkg.github.com',
