@@ -120,7 +120,7 @@
     "targets": {
       "python": {
         "distName": "projen-types",
-        "module": "projen-types"
+        "module": "projen_types"
       }
     },
     "tsc": {

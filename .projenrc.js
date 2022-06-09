@@ -21,7 +21,7 @@ const project = new cdk.JsiiProject({
   // github repository secrets for TWINE_USERNAME and TWINE_PASSWORD exists
   publishToPypi: {
     distName: 'projen-types',
-    module: 'projen-types',
+    module: 'projen_types',
   },
 });
 project.synth();
