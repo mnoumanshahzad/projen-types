@@ -1,10 +1,22 @@
 const { cdk } = require('projen');
 const project = new cdk.JsiiProject({
+  name: 'projen-types',
+  description: 'My custom projen project types',
+  keywords: ['projen', 'cdk', 'aws', 'codegen'],
+
+  defaultReleaseBranch: 'main',
+  repositoryUrl: 'https://github.com/mnoumanshahzad/projen-types.git',
+
   author: 'mnoumanshahzad',
   authorAddress: 'mnoumanshahzad@hotmail.com',
-  defaultReleaseBranch: 'main',
-  name: 'projen-types',
-  repositoryUrl: 'https://github.com/mnoumanshahzad/projen-types.git',
+
+  deps: ['projen'],
+  peerDeps: ['projen'],
+
+  release: true,
+  releaseToNpm: true,
+  npmTokenSecret: 'GITHUB_TOKEN',
+  npmRegistryUrl: 'https://npm.pkg.github.com',
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
