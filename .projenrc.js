@@ -15,14 +15,13 @@ const project = new cdk.JsiiProject({
 
   release: true,
 
-  packageName: '@mnoumanshahzad/projen-types',
+  // a github repository secret for NPM_TOKEN exists
   releaseToNpm: true,
-  npmTokenSecret: 'GITHUB_TOKEN',
-  npmRegistryUrl: 'https://npm.pkg.github.com',
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  // github repository secrets for TWINE_USERNAME and TWINE_PASSWORD exists
+  publishToPypi: {
+    distName: 'projen-types',
+    module: 'projen-types',
+  },
 });
 project.synth();
