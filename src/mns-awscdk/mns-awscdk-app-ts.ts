@@ -3,10 +3,10 @@ import { AwsCdkTypeScriptApp, AwsCdkTypeScriptAppOptions } from 'projen/lib/awsc
 /**
  * AWS CDK app in Python
  *
- * @pjid awscdk-app-ts
+ * @pjid mns-awscdk-app-ts
  */
 
-export class MyAwsCdkTypeScriptApp extends AwsCdkTypeScriptApp {
+export class MnsAwsCdkTypeScriptApp extends AwsCdkTypeScriptApp {
   constructor(options: AwsCdkTypeScriptAppOptions) {
     super({
       ...options,

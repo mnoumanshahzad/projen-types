@@ -1,1 +1,1 @@
-export * from './awscdk';
+export * from './mns-awscdk';

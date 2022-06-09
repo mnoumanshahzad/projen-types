@@ -3,10 +3,10 @@ import { AwsCdkPythonApp, AwsCdkPythonAppOptions } from 'projen/lib/awscdk';
 /**
  * AWS CDK app in Python
  *
- * @pjid awscdk-app-py
+ * @pjid mns-awscdk-app-py
  */
 
-export class MyAwsCdkPythonApp extends AwsCdkPythonApp {
+export class MnsAwsCdkPythonApp extends AwsCdkPythonApp {
   constructor(options: AwsCdkPythonAppOptions) {
     super({
       ...options,
