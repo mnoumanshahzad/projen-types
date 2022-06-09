@@ -6,7 +6,7 @@ import { AwsCdkPythonApp, AwsCdkPythonAppOptions } from 'projen/lib/awscdk';
  * @pjid awscdk-app-py
  */
 
-export class AwsCdkAppPy extends AwsCdkPythonApp {
+export class MyAwsCdkPythonApp extends AwsCdkPythonApp {
   constructor(options: AwsCdkPythonAppOptions) {
     super({
       ...options,
